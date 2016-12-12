@@ -2,7 +2,7 @@
 <template
     format="5"
     revision="5"
-    name="Mvp dagger2 Activity"
+    name="Mvp activity"
     minApi="7"
     minBuildApi="14"
     description="Creates a new mvp dagger classes">
@@ -37,10 +37,11 @@
         help="The name of the layout to create for the activity" />
 
 	<parameter
-		id="generateBase"
-		name="Generate Base Activity"
-		default="true"
-		help="IF true, will be generated init code, such as BaseActivity, AppComponent and so on." />
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"
+        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
     
     <parameter
         id="packageName"

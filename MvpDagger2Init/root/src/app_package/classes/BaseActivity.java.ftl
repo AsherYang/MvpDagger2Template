@@ -1,14 +1,14 @@
-package ${packageName};
+package ${packageName}.module.common;
 
-import ${superClassFqcn};
+import android.app.Activity;
 import android.os.Bundle;
 
-public class ${baseActivityClass} extends ${superClass} {
+public abstract class BaseActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		
+	setupComponent((AppComponent) App.get(this).getAppComponent());
     }
 
     protected abstract void setupComponent(AppComponent appComponent);
