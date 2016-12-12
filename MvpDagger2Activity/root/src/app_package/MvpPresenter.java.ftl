@@ -1,4 +1,4 @@
-package ${packageName}.module.${underscoreToCamelCase(classToResource(activityClass))};
+package ${packageName}.module.${moduleFileName};
 
 
 public interface ${presenterClass} {

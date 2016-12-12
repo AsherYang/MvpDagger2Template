@@ -12,7 +12,7 @@ public final class ${appClass} extends Application
     @Override
     public void onCreate() {
         super.onCreate();
-	setupGraph();
+        setupGraph();
     }
 
     private void setupGraph() {
@@ -27,7 +27,7 @@ public final class ${appClass} extends Application
         return mAppComponent;
     }
 
-    public static App get(Context context) {
-	return (App) context.getApplicationContext();
+    public static ${appClass} get(Context context) {
+	return (${appClass}) context.getApplicationContext();
     }
 }

@@ -1,8 +1,11 @@
-package ${packageName}.module.${underscoreToCamelCase(classToResource(activityClass))};
+package ${packageName}.module.${moduleFileName};
 
 import android.os.Bundle;
 
 public class ${activityClass} extends BaseActivity implements ${viewClass} {
+
+	@Inject
+	${presenterClass} mPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +17,10 @@ public class ${activityClass} extends BaseActivity implements ${viewClass} {
 
     @Override
     protected void setupComponent(AppComponent appComponent) {
-	// TODO inject dagger component
+		Dagger${componentClass}.builder()
+                .appComponent(appComponent)
+                .${moduleClass?uncap_first}(new ${moduleClass}(this))
+                .build()
+                .inject(this);
     }
 }

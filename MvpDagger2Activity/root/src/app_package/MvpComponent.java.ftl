@@ -1,8 +1,7 @@
-package ${packageName}.module.${underscoreToCamelCase(classToResource(activityClass))};
+package ${packageName}.module.${moduleFileName};
 
-import com.xtc.mvpdaggerretrofit.ActivityScope;
-import com.xtc.mvpdaggerretrofit.AppComponent;
-
+import ${packageName}.app.ActivityScope;
+import ${packageName}.app.AppComponent;
 import dagger.Component;
 
 

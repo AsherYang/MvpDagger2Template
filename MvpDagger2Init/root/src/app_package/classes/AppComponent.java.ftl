@@ -2,7 +2,7 @@ package ${packageName}.app;
 
 import android.content.Context;
 
-import ${packageName}.${appClass};
+import ${packageName}.app.${appClass};
 
 import javax.inject.Singleton;
 
@@ -12,5 +12,5 @@ import dagger.Component;
 @Component(modules = {AppModule.class})
 public interface AppComponent
 {
-   void inject(App app);
+   void inject(${appClass} app);
 }

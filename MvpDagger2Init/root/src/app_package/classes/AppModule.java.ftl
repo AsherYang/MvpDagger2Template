@@ -3,7 +3,7 @@ package ${packageName}.app;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import ${packageName}.${appClass};
+import ${packageName}.app.${appClass};
 
 import dagger.Module;
 import dagger.Provides;
@@ -22,7 +22,7 @@ public final class AppModule
     @Provides
     public Context provideAppContext()
     {
-        return mApp;
+        return mApp.getApplicationContext();
     }
 
     @Provides
