@@ -46,7 +46,8 @@ an android studio template that create mvp class quickly.
     ```
     
 4. 上述更改只针对`dagger2`的编译器依赖方式。`dagger2`本身的依赖方式不变。
-5. 参考资料：[Dagger2引入](https://github.com/google/dagger/pull/295/files?short_path=04c6e90#diff-04c6e90faac2675aa89e2176d2eec7d8)
+5. 改完重新`sync`以及重新`make project`才生效。
+6. 参考资料：[Dagger2引入](https://github.com/google/dagger/pull/295/files?short_path=04c6e90#diff-04c6e90faac2675aa89e2176d2eec7d8)
 
 ### 原因：
 出现上述问题的原因是：由于`freeMarker`语法`dependency`(暂时)并不支持以`apt`的方式引入。只支持`compile`方式原始
