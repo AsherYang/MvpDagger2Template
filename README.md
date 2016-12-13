@@ -8,7 +8,6 @@ an android studio template that create mvp class quickly.
 
 ![](https://raw.githubusercontent.com/AsherYang/MvpDagger2Template/master/screenshot/mvp_dagger_map.png)
 
-
 ## 使用
 1. 使用顺序：第一次使用，先用`setUp`进行相关初始化操作，如：添加依赖，以及生成`Application`类等。
 2. 然后就可以使用，新建一个`Mvp Activity` 了。当每次新加一个功能模块都可以使用该新建Activity方式，进行相关类生成。
