@@ -2,7 +2,7 @@
 <template
     format="2"
     revision="2"
-    name="MVP setup"
+    name="Mvp setup"
     minApi="7"
     minBuildApi="14"
     description="Creates a hierarchy for MVP with base classes">
