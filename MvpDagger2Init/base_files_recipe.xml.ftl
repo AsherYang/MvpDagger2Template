@@ -1,5 +1,5 @@
 <recipe>
-	<instantiate from="src/app_package/classes/App.java.ftl"
+    <instantiate from="src/app_package/classes/App.java.ftl"
        to="${escapeXmlAttribute(srcOut)}/app/${appClass}.java" />
 
     <instantiate from="src/app_package/classes/AppComponent.java.ftl"
